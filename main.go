@@ -2,10 +2,12 @@ package main
 
 import (
 	"fmt"
+	"time"
 )
 
 func main() {
-	hello()
+	go hello()
+	time.Sleep(1 * time.Microsecond)
 	goodbye()
 }
 
